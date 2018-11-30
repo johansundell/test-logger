@@ -116,6 +116,7 @@ const homeHTML = `<!DOCTYPE html>
                 conn.onmessage = function(evt) {
                     console.log('file updated');
                     data.textContent = evt.data;
+					window.scroll({top: document.body.scrollHeight, left: 0, behavior: 'smooth' });
                 }
             })();
         </script>
